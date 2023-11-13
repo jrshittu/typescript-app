@@ -1,20 +1,16 @@
 import React from 'react';
 import './App.css';
+import InputField from './components/InputField';
 
-let name: string;
-let age: number;
-let isHome: boolean;
-let hobbies: string[];
-let role: [number, string];
-
-age = 23;
-name = "Abideen"
-isHome = false;
-
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      Testing
+      <div className="heading">
+        Task Master
+      </div>
+
+      <InputField />
+      
     </div>
   );
 }
